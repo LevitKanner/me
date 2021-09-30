@@ -1,5 +1,5 @@
 export const TechStack = () => {
-    return <section className="hidden lg:block px-24 mt-24">
+    return <section className="hidden lg:block px-12 mt-24">
         <h3 className="text-center font-semibold text-4xl py-4"> Technologies I use </h3>
         <div>
             src/components/TopNav.js
