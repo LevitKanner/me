@@ -1,6 +1,6 @@
 export const TechStack = () => {
     return <section className="hidden lg:block px-12 mt-24">
-        <h3 className="text-center font-semibold text-4xl py-4"> Technologies I use </h3>
+        <h3 className="text-center font-semibold text-gold-500 text-4xl py-4"> Technologies I use </h3>
         <div>
             src/components/TopNav.js
             Line 6:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,

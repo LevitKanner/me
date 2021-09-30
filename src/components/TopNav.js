@@ -1,5 +1,5 @@
 export const TopNav = () => {
-    return <div className="flex justify-end py-6 px-12">
+    return <div className="flex justify-end py-6 px-12 text-gold-500">
         <nav>
             <ul className="flex space-x-12">
                 <li>
