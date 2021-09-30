@@ -1,12 +1,14 @@
+import {Link} from "react-router-dom";
+
 export const TopNav = () => {
     return <div className="flex justify-end py-6 px-12 text-gold-500">
         <nav>
             <ul className="flex space-x-12">
                 <li>
-                    <a href="/" className="text-lg hover:text-blue-600 font-semibold"> Contact Me</a>
+                    <Link to="/contact" className="text-lg hover:text-blue-600 font-semibold"> Contact Me</Link>
                 </li>
                 <li>
-                    <a href="/" className="text-lg hover:text-blue-600 font-semibold"> Projects </a>
+                    <Link to="/" className="text-lg hover:text-blue-600 font-semibold"> Projects </Link>
                 </li>
             </ul>
         </nav>
