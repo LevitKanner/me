@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 function TextField({title, type, value, onChange}) {
     return <div>
@@ -16,20 +18,28 @@ export const Contact = ({hideForm}) => {
     const [message, setMessage] = useState('')
     const [email, setEmail] = useState('')
 
-    const handleSubmit = (e) => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
         e.preventDefault();
-        console.log({fullName, message, email})
-    }
+        emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, form.current, process.env.REACT_APP_USERID)
+            .then((result) => {
+                console.log(result.text, 'message sent');
+                hideForm()
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return <div className="absolute inset-0 flex items-center justify-center">
         <div className="bg-white px-6 md:px-8 pb-8 rounded-lg max-w-md sm:max-w-xl mx-auto relative shadow-lg border border-gold-500 ">
             <h2 className="text-center text-3xl text-gold-500 font-bold py-8"> Send me a message </h2>
-            <form className="space-y-4 text-black" onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={sendEmail} className="space-y-4 text-black" >
                 <TextField title="Full Name" value={fullName} onChange={e => setFullName(e.target.value)}/>
                 <TextField type="email" title="Email" value={email} onChange={e => setEmail(e.target.value)}/>
                 <div>
                     <label htmlFor="message" className="block py-2 text-gold-500"> Message </label>
-                    <textarea id="message" value={message} onChange={e => setMessage(e.target.value)} rows={5}
+                    <textarea id="message" name="message" value={message} onChange={e => setMessage(e.target.value)} rows={5}
                               className="w-full p-3 rounded-md border border-gold-500">
                 </textarea>
                 </div>
