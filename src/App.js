@@ -11,7 +11,7 @@ function App() {
     const [showingMessageBox, setShowingMessageBox] = useState(false);
     return (
         <Router>
-            <div className="w-screen bg-black text-white font-lora">
+            <div className="w-screen min-h-screen bg-black text-white font-lora">
                 <div className="max-w-7xl mx-auto">
                     <TopNav toggleMessageBox={() => setShowingMessageBox(true)}/>
                     <div className="relative">

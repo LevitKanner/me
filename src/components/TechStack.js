@@ -1,72 +1,180 @@
 export const TechStack = () => {
     return <section className="hidden lg:block px-16 mt-24">
         <h3 className="text-center font-semibold text-gold-500 text-4xl py-4"> Technologies I use </h3>
-        <div>
-            src/components/TopNav.js
-            Line 6:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,
-            navigable address as the href value. If you cannot provide an href, but still need the element to resemble a
-            link, use a button and change it with appropriate styles. Learn more:
-            https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-            jsx-a11y/anchor-is-valid
-            Line 9:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,
-            navigable address as the href value. If you cannot provide an href, but still need the element to resemble a
-            link, use a button and change it with appropriate styles. Learn more:
-            https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-            jsx-a11y/anchor-is-valid
+        <div className="flex justify-between py-4">
+            <div>
+                <h3 className="p-3 text-gold-500 text-center"> Frontend Development</h3>
+                <div className="flex space-x-6">
+                    <div className="w-24 h-24">
+                        <img src="react.png" alt="reactjs"/>
+                    </div>
+                    <div className="w-24 h-24">
+                        <img src="vue.png" alt="vuejs" className="w-full h-full object-center"/>
+                    </div>
+                    <div className="w-24 h-24">
+                        <svg className="w-24 h-24" preserveAspectRatio="xMidYMid" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 256 153.6">
+                            <linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%">
+                                <stop offset="0" stopColor="#2298bd"/>
+                                <stop offset="1" stopColor="#0ed7b5"/>
+                            </linearGradient>
+                            <path
+                                d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z"
+                                fill="url(#a)"/>
+                        </svg>
+                    </div>
 
-            Search for the keywords to learn more about each warning.
-            To ignore, add // eslint-disable-next-line to the line before.
-            Compiling...
-            Compiled with warnings.
 
-            src/components/TopNav.js
-            Line 6:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,
-            navigable address as the href value. If you cannot provide an href, but still need the element to resemble a
-            link, use a button and change it with appropriate styles. Learn more:
-            https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-            jsx-a11y/anchor-is-valid
-            Line 9:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,
-            navigable address as the href value. If you cannot provide an href, but still need the element to resemble a
-            link, use a button and change it with appropriate styles. Learn more:
-            https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-            jsx-a11y/anchor-is-valid
+                </div>
+            </div>
 
-            Search for the keywords to learn more about each warning.
-            To ignore, add // eslint-disable-next-line to the line before.
-            Compiling...
-            Compiled with warnings.
+            <div>
+                <h3 className="p-3 text-gold-500 text-center"> Backend Development</h3>
+                <div className="flex space-x-6">
+                    <div className="w-24 h-24">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-24 h-24" viewBox="0 0 84.1 57.6">
+                            <title>laravel</title>
+                            <path fill="#fb503b"
+                                  d="M83.8 26.9c-.6-.6-8.3-10.3-9.6-11.9-1.4-1.6-2-1.3-2.9-1.2s-10.6 1.8-11.7 1.9c-1.1.2-1.8.6-1.1 1.6.6.9 7 9.9 8.4 12l-25.5 6.1L21.2 1.5c-.8-1.2-1-1.6-2.8-1.5C16.6.1 2.5 1.3 1.5 1.3c-1 .1-2.1.5-1.1 2.9S17.4 41 17.8 42c.4 1 1.6 2.6 4.3 2 2.8-.7 12.4-3.2 17.7-4.6 2.8 5 8.4 15.2 9.5 16.7 1.4 2 2.4 1.6 4.5 1 1.7-.5 26.2-9.3 27.3-9.8 1.1-.5 1.8-.8 1-1.9-.6-.8-7-9.5-10.4-14 2.3-.6 10.6-2.8 11.5-3.1 1-.3 1.2-.8.6-1.4zm-46.3 9.5c-.3.1-14.6 3.5-15.3 3.7-.8.2-.8.1-.8-.2-.2-.3-17-35.1-17.3-35.5-.2-.4-.2-.8 0-.8S17.6 2.4 18 2.4c.5 0 .4.1.6.4 0 0 18.7 32.3 19 32.8.4.5.2.7-.1.8zm40.2 7.5c.2.4.5.6-.3.8-.7.3-24.1 8.2-24.6 8.4-.5.2-.8.3-1.4-.6s-8.2-14-8.2-14L68.1 32c.6-.2.8-.3 1.2.3.4.7 8.2 11.3 8.4 11.6zm1.6-17.6c-.6.1-9.7 2.4-9.7 2.4l-7.5-10.2c-.2-.3-.4-.6.1-.7.5-.1 9-1.6 9.4-1.7.4-.1.7-.2 1.2.5.5.6 6.9 8.8 7.2 9.1.3.3-.1.5-.7.6z"/>
+                        </svg>
+                    </div>
+                    <div className="w-24 h-24">
+                        <svg viewBox="-0.23294661979148623 0 125.23294661979149 79.04777140278348"
+                             xmlns="http://www.w3.org/2000/svg" className="w-24 h-24">
+                            <g fill="#621ee5">
+                                <path
+                                    d="M6.02 40.25c-.32-.34-.71-.61-1.14-.8s-.89-.28-1.36-.28c-.47-.01-.93.09-1.36.27-.43.19-.82.46-1.14.8-.33.33-.59.72-.76 1.15-.17.44-.26.9-.26 1.36-.01.47.08.93.26 1.36s.44.82.77 1.15a3.339 3.339 0 0 0 2.5 1.05 3.456 3.456 0 0 0 2.5-1.05c.34-.32.6-.71.78-1.14s.27-.89.27-1.36-.09-.93-.27-1.36c-.19-.44-.45-.83-.79-1.15zM47.87 32.13c-.05 2.24.06 4.49.32 6.72h-.12c-.28-.55-.9-1.57-1.85-3.06L23.42 0H16.5v45.69h5.32V12.66c.06-2.09-.03-4.18-.25-6.27h.2c.38 1 .87 1.96 1.45 2.86l23.42 36.44h6.55V0h-5.32zM89.26 40.67h-18.8V24.84h16.45v-4.82H70.46V4.84h17.65V0h-23.1v45.69h24.22zM93.33 0v4.84h13.1v40.85h5.32V4.84H125V0zM41.19 57.05a10.04 10.04 0 0 0-3.52 2.37c-1.02 1.09-1.82 2.37-2.34 3.78s-.75 2.9-.69 4.39c-.1 2.76.86 5.46 2.7 7.52.92.97 2.04 1.72 3.28 2.22s2.57.72 3.9.66c2 .07 3.99-.35 5.8-1.23l.02-2.33c-1.66.97-3.55 1.45-5.47 1.4-1.03.04-2.06-.14-3.01-.53s-1.81-.99-2.51-1.75a8.72 8.72 0 0 1-2.1-6.14c-.12-2.37.69-4.69 2.25-6.47.74-.82 1.65-1.46 2.66-1.9a7.68 7.68 0 0 1 3.21-.61c1.75-.03 3.47.4 5 1.25v-2.51a12.23 12.23 0 0 0-5-.88c-1.43-.02-2.86.23-4.18.76zM66.12 64.21a6.719 6.719 0 0 0-5.22-2.08c-1.03-.05-2.05.12-3.01.49s-1.83.93-2.57 1.64c-.72.8-1.27 1.73-1.63 2.75s-.51 2.09-.44 3.17c-.1 2.05.61 4.06 1.97 5.59.68.73 1.5 1.31 2.42 1.7.92.38 1.91.57 2.9.53 1.01.03 2.02-.16 2.96-.55s1.78-.98 2.47-1.73a8.06 8.06 0 0 0 2.02-5.76c.12-2.1-.55-4.15-1.87-5.75zm-1.83 10.27a4.394 4.394 0 0 1-3.57 1.51c-.69.03-1.37-.1-2-.36-.63-.27-1.19-.67-1.65-1.19a6.126 6.126 0 0 1-1.35-4.21c-.09-1.57.39-3.12 1.35-4.36.45-.52 1.01-.93 1.64-1.21.63-.27 1.32-.4 2-.37.68-.04 1.35.09 1.97.36s1.17.68 1.61 1.2a6.668 6.668 0 0 1 1.25 4.34c.1 1.52-.34 3.05-1.25 4.29zM75.88 63.23c-.75.67-1.3 1.54-1.57 2.51V62.6h-2.5v15.04h2.5v-7.67c-.08-1.39.28-2.78 1.02-3.96.27-.43.63-.79 1.07-1.04s.93-.4 1.43-.41c.64-.05 1.28.12 1.82.48v-2.48c-.46-.15-.94-.22-1.42-.2-.86-.01-1.69.3-2.35.87zM94.28 69.44c.12-1.91-.45-3.79-1.6-5.31-.57-.64-1.27-1.15-2.06-1.48s-1.64-.48-2.49-.43c-.94-.03-1.88.16-2.75.54-.86.38-1.63.95-2.25 1.67a8.217 8.217 0 0 0-1.97 5.71c-.13 2.08.52 4.14 1.82 5.76.63.69 1.41 1.23 2.27 1.59s1.8.51 2.73.47c1.85.09 3.68-.41 5.22-1.43v-2.26a7.506 7.506 0 0 1-4.65 1.68c-.65.04-1.31-.06-1.92-.3s-1.17-.59-1.63-1.06a5.58 5.58 0 0 1-1.27-3.86H94.3zm-10.57-.7c.13-1.19.65-2.31 1.47-3.18a3.86 3.86 0 0 1 2.88-1.23c.52-.03 1.03.06 1.51.26s.9.5 1.24.89c.7.93 1.05 2.07 1 3.23z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div className="w-24 h-24">
+                        <svg className="w-24 h-24" viewBox="0 0 512 314" xmlns="http://www.w3.org/2000/svg"
+                             xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                            <defs>
+                                <linearGradient x1="68.188%" y1="17.487%" x2="27.823%" y2="89.755%" id="b">
+                                    <stop stopColor="#41873F" offset="0%"/>
+                                    <stop stopColor="#418B3D" offset="32.88%"/>
+                                    <stop stopColor="#419637" offset="63.52%"/>
+                                    <stop stopColor="#3FA92D" offset="93.19%"/>
+                                    <stop stopColor="#3FAE2A" offset="100%"/>
+                                </linearGradient>
+                                <path id="a"
+                                      d="M57.903 1.85a5.957 5.957 0 0 0-5.894 0L3.352 29.933c-1.85 1.04-2.89 3.005-2.89 5.085v56.286c0 2.08 1.156 4.045 2.89 5.085l48.657 28.085a5.957 5.957 0 0 0 5.894 0l48.658-28.085c1.849-1.04 2.89-3.005 2.89-5.085V35.019c0-2.08-1.157-4.045-2.89-5.085L57.903 1.85z"/>
+                                <linearGradient x1="43.277%" y1="55.169%" x2="159.245%" y2="-18.306%" id="d">
+                                    <stop stopColor="#41873F" offset="13.76%"/>
+                                    <stop stopColor="#54A044" offset="40.32%"/>
+                                    <stop stopColor="#66B848" offset="71.36%"/>
+                                    <stop stopColor="#6CC04A" offset="90.81%"/>
+                                </linearGradient>
+                                <linearGradient x1="-4413.77%" y1="13.43%" x2="5327.93%" y2="13.43%" id="e">
+                                    <stop stopColor="#6CC04A" offset="9.192%"/>
+                                    <stop stopColor="#66B848" offset="28.64%"/>
+                                    <stop stopColor="#54A044" offset="59.68%"/>
+                                    <stop stopColor="#41873F" offset="86.24%"/>
+                                </linearGradient>
+                                <linearGradient x1="-4.389%" y1="49.997%" x2="101.499%" y2="49.997%" id="f">
+                                    <stop stopColor="#6CC04A" offset="9.192%"/>
+                                    <stop stopColor="#66B848" offset="28.64%"/>
+                                    <stop stopColor="#54A044" offset="59.68%"/>
+                                    <stop stopColor="#41873F" offset="86.24%"/>
+                                </linearGradient>
+                                <linearGradient x1="-9713.77%" y1="36.21%" x2="27.93%" y2="36.21%" id="g">
+                                    <stop stopColor="#6CC04A" offset="9.192%"/>
+                                    <stop stopColor="#66B848" offset="28.64%"/>
+                                    <stop stopColor="#54A044" offset="59.68%"/>
+                                    <stop stopColor="#41873F" offset="86.24%"/>
+                                </linearGradient>
+                                <linearGradient x1="-103.861%" y1="50.275%" x2="100.797%" y2="50.275%" id="h">
+                                    <stop stopColor="#6CC04A" offset="9.192%"/>
+                                    <stop stopColor="#66B848" offset="28.64%"/>
+                                    <stop stopColor="#54A044" offset="59.68%"/>
+                                    <stop stopColor="#41873F" offset="86.24%"/>
+                                </linearGradient>
+                                <linearGradient x1="130.613%" y1="-211.069%" x2="4.393%" y2="201.605%" id="i">
+                                    <stop stopColor="#41873F" offset="0%"/>
+                                    <stop stopColor="#418B3D" offset="32.88%"/>
+                                    <stop stopColor="#419637" offset="63.52%"/>
+                                    <stop stopColor="#3FA92D" offset="93.19%"/>
+                                    <stop stopColor="#3FAE2A" offset="100%"/>
+                                </linearGradient>
+                            </defs>
+                            <g fill="none">
+                                <path
+                                    d="M253.11 313.094c-1.733 0-3.351-.462-4.854-1.271l-15.371-9.13c-2.312-1.272-1.156-1.734-.462-1.965 3.12-1.04 3.698-1.272 6.934-3.12.347-.232.81-.116 1.156.115l11.789 7.05c.462.231 1.04.231 1.386 0l46.115-26.698c.462-.231.694-.694.694-1.271v-53.28c0-.579-.232-1.04-.694-1.272l-46.115-26.582c-.462-.232-1.04-.232-1.386 0l-46.115 26.582c-.462.231-.694.809-.694 1.271v53.28c0 .463.232 1.04.694 1.272l12.598 7.281c6.819 3.467 11.095-.578 11.095-4.623v-52.587c0-.693.578-1.387 1.387-1.387h5.894c.694 0 1.387.578 1.387 1.387v52.587c0 9.13-4.97 14.447-13.638 14.447-2.658 0-4.738 0-10.633-2.89l-12.135-6.934c-3.005-1.733-4.854-4.97-4.854-8.437v-53.28c0-3.467 1.849-6.704 4.854-8.437l46.114-26.698c2.89-1.618 6.82-1.618 9.709 0l46.114 26.698c3.005 1.733 4.855 4.97 4.855 8.437v53.28c0 3.467-1.85 6.704-4.855 8.437l-46.114 26.698c-1.503.694-3.236 1.04-4.854 1.04zm14.216-36.637c-20.225 0-24.386-9.246-24.386-17.105 0-.694.578-1.387 1.387-1.387h6.01c.693 0 1.271.462 1.271 1.156.925 6.125 3.583 9.13 15.834 9.13 9.708 0 13.87-2.196 13.87-7.397 0-3.005-1.157-5.2-16.297-6.703-12.598-1.272-20.457-4.045-20.457-14.1 0-9.362 7.86-14.91 21.035-14.91 14.793 0 22.075 5.086 23 16.18 0 .348-.116.694-.347 1.041-.232.231-.578.462-.925.462h-6.01c-.578 0-1.156-.462-1.271-1.04-1.387-6.356-4.97-8.437-14.447-8.437-10.633 0-11.905 3.699-11.905 6.472 0 3.352 1.503 4.392 15.834 6.241 14.216 1.85 20.92 4.508 20.92 14.447-.116 10.171-8.437 15.95-23.116 15.95z"
+                                    fill="#539E43"/>
+                                <path
+                                    d="M110.028 104.712c0-2.08-1.156-4.046-3.005-5.086l-49.004-28.2c-.81-.463-1.734-.694-2.658-.81h-.463c-.924 0-1.849.347-2.658.81l-49.004 28.2c-1.85 1.04-3.005 3.005-3.005 5.086l.116 75.817c0 1.04.578 2.08 1.502 2.543.925.578 2.08.578 2.89 0l29.125-16.643c1.849-1.04 3.005-3.005 3.005-5.085v-35.482c0-2.08 1.155-4.045 3.005-5.085l12.366-7.166c.925-.578 1.965-.81 3.005-.81 1.04 0 2.08.232 2.89.81l12.366 7.166c1.85 1.04 3.005 3.004 3.005 5.085v35.482c0 2.08 1.156 4.045 3.005 5.085l29.125 16.643c.925.578 2.08.578 3.005 0 .925-.463 1.503-1.503 1.503-2.543l-.116-75.817zM345.571.347c-.924-.463-2.08-.463-2.89 0-.924.578-1.502 1.502-1.502 2.542v75.125c0 .693-.346 1.386-1.04 1.849-.693.346-1.387.346-2.08 0l-12.251-7.05a5.957 5.957 0 0 0-5.895 0l-49.004 28.316c-1.849 1.04-3.005 3.005-3.005 5.085v56.516c0 2.08 1.156 4.046 3.005 5.086l49.004 28.316a5.957 5.957 0 0 0 5.895 0l49.004-28.316c1.849-1.04 3.005-3.005 3.005-5.086V21.844c0-2.196-1.156-4.16-3.005-5.201L345.572.347zm-4.507 143.776c0 .578-.231 1.04-.694 1.271l-16.758 9.708a1.714 1.714 0 0 1-1.503 0l-16.758-9.708c-.463-.231-.694-.809-.694-1.271v-19.417c0-.578.231-1.04.694-1.271l16.758-9.709a1.714 1.714 0 0 1 1.503 0l16.758 9.709c.463.23.694.809.694 1.271v19.417zM508.648 124.244c1.85-1.04 2.89-3.005 2.89-5.086v-13.753c0-2.08-1.156-4.045-2.89-5.085l-48.657-28.2a5.957 5.957 0 0 0-5.894 0l-49.004 28.315c-1.85 1.04-3.005 3.005-3.005 5.086v56.516c0 2.08 1.155 4.045 3.005 5.085l48.657 27.738c1.85 1.04 4.045 1.04 5.779 0L489 178.45c.925-.463 1.503-1.503 1.503-2.543 0-1.04-.578-2.08-1.503-2.543l-49.235-28.316c-.924-.577-1.502-1.502-1.502-2.542v-17.683c0-1.04.578-2.08 1.502-2.543l15.372-8.784a2.821 2.821 0 0 1 3.005 0l15.371 8.784c.925.578 1.503 1.502 1.503 2.543v13.869c0 1.04.578 2.08 1.502 2.542.925.578 2.08.578 3.005 0l29.125-16.99z"
+                                    fill="#333"/>
+                                <path
+                                    d="M456.293 121.586a1.05 1.05 0 0 1 1.155 0l9.362 5.432c.347.23.578.577.578 1.04v10.864c0 .462-.231.809-.578 1.04l-9.362 5.432a1.05 1.05 0 0 1-1.155 0l-9.362-5.432c-.347-.231-.578-.578-.578-1.04v-10.864c0-.463.231-.81.578-1.04l9.362-5.432z"
+                                    fill="#539E43"/>
+                                <g transform="translate(134.068 70.501)">
+                                    <mask id="c" fill="#fff">
+                                        <use xlinkHref="#a"/>
+                                    </mask>
+                                    <use fill="url(#b)" xlinkHref="#a"/>
+                                    <g mask="url(#c)">
+                                        <path
+                                            d="M51.893 1.85L3.121 29.933C1.27 30.974 0 32.94 0 35.02v56.286c0 1.387.578 2.658 1.502 3.698L56.285 1.156c-1.387-.231-3.005-.116-4.392.693zM56.632 125.053c.462-.116.925-.347 1.387-.578l48.773-28.085c1.85-1.04 3.005-3.005 3.005-5.085V35.019c0-1.502-.694-3.005-1.734-4.045l-51.43 94.079z"/>
+                                        <path
+                                            d="M106.676 29.934L57.788 1.85a8.025 8.025 0 0 0-1.503-.578L1.502 95.12a6.082 6.082 0 0 0 1.619 1.387l48.888 28.085c1.387.809 3.005 1.04 4.507.577l51.432-94.078c-.347-.462-.81-.81-1.272-1.156z"
+                                            fill="url(#d)"/>
+                                    </g>
+                                    <g mask="url(#c)">
+                                        <path
+                                            d="M109.797 91.305V35.019c0-2.08-1.271-4.045-3.12-5.085L57.786 1.85a5.106 5.106 0 0 0-1.848-.693l53.511 91.42c.231-.347.347-.809.347-1.271zM3.12 29.934C1.272 30.974 0 32.94 0 35.02v56.286c0 2.08 1.387 4.045 3.12 5.085l48.889 28.085c1.156.693 2.427.925 3.814.693L3.467 29.818l-.346.116z"/>
+                                        <path fill="url(#e)" fillRule="evenodd"
+                                              d="M50.391.809l-.693.347h.924l-.231-.347z"
+                                              transform="translate(0 -9.246)"/>
+                                        <path
+                                            d="M106.792 105.636c1.387-.809 2.427-2.196 2.89-3.698L56.053 10.402c-1.387-.231-2.89-.116-4.16.693L3.351 39.065l52.355 95.465a8.057 8.057 0 0 0 2.196-.693l48.889-28.2z"
+                                            fill="url(#f)" fillRule="evenodd" transform="translate(0 -9.246)"/>
+                                        <path fill="url(#g)" fillRule="evenodd"
+                                              d="M111.3 104.712l-.347-.578v.809l.346-.231z"
+                                              transform="translate(0 -9.246)"/>
+                                        <path
+                                            d="M106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734 54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814z"
+                                            fill="url(#h)" fillRule="evenodd" transform="translate(0 -9.246)"/>
+                                        <path
+                                            d="M106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734 54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814z"
+                                            fill="url(#i)" fillRule="evenodd" transform="translate(0 -9.246)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
 
-            src/components/TopNav.js
-            Line 6:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,
-            navigable address as the href value. If you cannot provide an href, but still need the element to resemble a
-            link, use a button and change it with appropriate styles. Learn more:
-            https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-            jsx-a11y/anchor-is-valid
-            Line 9:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,
-            navigable address as the href value. If you cannot provide an href, but still need the element to resemble a
-            link, use a button and change it with appropriate styles. Learn more:
-            https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-            jsx-a11y/anchor-is-valid
+                </div>
+            </div>
 
-            Search for the keywords to learn more about each warning.
-            To ignore, add // eslint-disable-next-line to the line before.
-            Compiling...
-            Compiled with warnings.
+            <div>
 
-            src/components/TopNav.js
-            Line 6:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,
-            navigable address as the href value. If you cannot provide an href, but still need the element to resemble a
-            link, use a button and change it with appropriate styles. Learn more:
-            https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-            jsx-a11y/anchor-is-valid
-            Line 9:21: The href attribute is required for an anchor to be keyboard accessible. Provide a valid,
-            navigable address as the href value. If you cannot provide an href, but still need the element to resemble a
-            link, use a button and change it with appropriate styles. Learn more:
-            https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-            jsx-a11y/anchor-is-valid
-
-            Search for the keywords to learn more about each warning.
-            To ignore, add // eslint-disable-next-line to the line before.
+                <h3 className="p-3 text-gold-500 text-center"> Mobile Development</h3>
+                <div className="flex">
+                    <div>
+                        <svg className="w-24 h-24" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMinYMin meet">
+                            <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-1845.501" y1="1255.639"
+                                            x2="-1797.134" y2="981.338"
+                                            gradientTransform="rotate(180 -846.605 623.252)">
+                                <stop offset="0" stopColor="#faae42"/>
+                                <stop offset="1" stopColor="#ef3e31"/>
+                            </linearGradient>
+                            <path fill="url(#a)"
+                                  d="M56.9 0h141.8c6.9 0 13.6 1.1 20.1 3.4 9.4 3.4 17.9 9.4 24.3 17.2 6.5 7.8 10.8 17.4 12.3 27.4.6 3.7.7 7.4.7 11.1V197.4c0 4.4-.2 8.9-1.1 13.2-2 9.9-6.7 19.2-13.5 26.7-6.7 7.5-15.5 13.1-25 16.1-5.8 1.8-11.8 2.6-17.9 2.6-2.7 0-142.1 0-144.2-.1-10.2-.5-20.3-3.8-28.8-9.5-8.3-5.6-15.1-13.4-19.5-22.4-3.8-7.7-5.7-16.3-5.7-24.9V56.9C.2 48.4 2 40 5.7 32.4c4.3-9 11-16.9 19.3-22.5C33.5 4.1 43.5.7 53.7.2c1-.2 2.1-.2 3.2-.2z"/>
+                            <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="130.612" y1="4.136" x2="95.213"
+                                            y2="204.893">
+                                <stop offset="0" stopColor="#e39f3a"/>
+                                <stop offset="1" stopColor="#d33929"/>
+                            </linearGradient>
+                            <path fill="url(#b)"
+                                  d="M216 209.4c-.9-1.4-1.9-2.8-3-4.1-2.5-3-5.4-5.6-8.6-7.8-4-2.7-8.7-4.4-13.5-4.6-3.4-.2-6.8.4-10 1.6-3.2 1.1-6.3 2.7-9.3 4.3-3.5 1.8-7 3.6-10.7 5.1-4.4 1.8-9 3.2-13.7 4.2-5.9 1.1-11.9 1.5-17.8 1.4-10.7-.2-21.4-1.8-31.6-4.8-9-2.7-17.6-6.4-25.7-11.1-7.1-4.1-13.7-8.8-19.9-14.1-5.1-4.4-9.8-9.1-14.2-14.1-3-3.5-5.9-7.2-8.6-11-1.1-1.5-2.1-3.1-3-4.7L0 121.2V56.7C0 25.4 25.3 0 56.6 0h50.5l37.4 38c84.4 57.4 57.1 120.7 57.1 120.7s24 27 14.4 50.7z"/>
+                            <path fill="#FFF"
+                                  d="M144.7 38c84.4 57.4 57.1 120.7 57.1 120.7s24 27.1 14.3 50.8c0 0-9.9-16.6-26.5-16.6-16 0-25.4 16.6-57.6 16.6-71.7 0-105.6-59.9-105.6-59.9C91 192.1 135.1 162 135.1 162c-29.1-16.9-91-97.7-91-97.7 53.9 45.9 77.2 58 77.2 58-13.9-11.5-52.9-67.7-52.9-67.7 31.2 31.6 93.2 75.7 93.2 75.7C179.2 81.5 144.7 38 144.7 38z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
