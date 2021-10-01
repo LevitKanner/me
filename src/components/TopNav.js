@@ -8,7 +8,7 @@ export const TopNav = () => {
                     <Link to="/contact" className="text-lg hover:text-blue-600 font-semibold"> Contact Me</Link>
                 </li>
                 <li>
-                    <Link to="/" className="text-lg hover:text-blue-600 font-semibold"> Projects </Link>
+                    <a href = "mailto: lkanner21@gmail.com" className="text-lg hover:text-blue-600 font-semibold">Send Email</a>
                 </li>
             </ul>
         </nav>
