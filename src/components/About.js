@@ -1,10 +1,10 @@
 export const About = () => {
-    return <p className="text-lg md:text-xl tracking-wider leading-relaxed">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+    return <div>
+        <h1 className="text-4xl py-4 font-royale"> <span > Hi, </span>   <span className="block font-dancing text-gold-500">I'm Levit </span></h1>
+        <p className="text-md md:text-xl pt-4 tracking-wider leading-relaxed">
+        <span className="block py-2">A Software Developer based in Ghana. I have a serious passion for solving problems, developing and creating software applications.</span>
+        <span className="block py-2">Well-organised person, problem solver, independent employee with high attention to detail.</span>
+        <span className="block py-2">Interested in the entire development spectrum and working on ambitious projects with positive people.</span>
     </p>
+    </div>
 }

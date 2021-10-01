@@ -16,6 +16,11 @@ module.exports = {
                     "800": "#af6114",
                     "900": "#a5570a"
                 }
+            },
+            fontFamily: {
+                royale: "'Bonheur Royale', cursive",
+                lora: "'Lora', serif",
+                dancing: "'Dancing Script', cursive"
             }
         },
     },
