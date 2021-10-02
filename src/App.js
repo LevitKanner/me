@@ -16,11 +16,11 @@ function App() {
                     <TopNav toggleMessageBox={() => setShowingMessageBox(true)}/>
                     <div className="relative">
                         <div className="flex flex-col lg:flex-row md:px-12">
-                            <div className="px-4 pt-6 md:px-12 lg:px-2">
+                            <div className="px-4 pt-12 md:px-12 lg:px-2">
                                 <Avatar src={'animoji.jpeg'}/>
                             </div>
 
-                            <div className="w-full px-6 py-24 md:px-12 lg:w-2/3 lg:px-6">
+                            <div className="w-full px-6 pt-8 pb-24 md:px-12 lg:w-2/3 lg:px-6">
                                 <About/>
                             </div>
                         </div>

@@ -24,7 +24,7 @@ export const Contact = ({hideForm}) => {
     const sendEmail = (e) => {
         e.preventDefault();
         if (!fullName && !message && !email) return
-        emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, form.current, process.env.REACT_APP_USERID)
+        emailjs.sendForm("service_xrdb9bj", "template_0amihtm", form.current, "user_iAHBz7KGqRI3LyL3hHyEh")
             .then((result) => {
                 setSent(true);
                 setTimeout(hideForm, 2000)
