@@ -9,7 +9,5 @@ H
 src/components/Avatar.js,5/6/56e1055f2418b236ac284798df739f5169d74056
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-H
-src/components/Navbar.js,2/d/2d4879a2b825dad8d007f4486bb3dca97c81dd6d
-H
-src/components/TopNav.js,5/f/5fde669381c9d7d6088aa5b02545abdcc96716e6
+4
+.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a

@@ -16,7 +16,7 @@ function App() {
                     <TopNav toggleMessageBox={() => setShowingMessageBox(true)}/>
                     <div className="relative">
                         <div className="flex flex-col lg:flex-row md:px-12">
-                            <div className="px-4 pt-12 md:px-12 lg:px-2">
+                            <div className="px-4 pt-6 md:px-12 lg:px-2">
                                 <Avatar src={'animoji.jpeg'}/>
                             </div>
 
